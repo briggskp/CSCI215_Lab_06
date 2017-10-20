@@ -6,10 +6,19 @@ function checkEmail(email) {
 
 function checkAge() {
     var regEx = new RegExp('\w');
-    
-    if() {
-       
+    var age = document.getElementById("age").value;
+
+    if(regEx.test(age)) {
+        console.log("Illegal character: " + document.getElementById('age').value);
+       // Set background to red
+        document.getElementById('age').style.backgroundColor='red';
+
+
     } else {
-       
+       document.getElementById('age').style.backgroundColor='';
     }
+}
+
+function validate() {
+
 }
